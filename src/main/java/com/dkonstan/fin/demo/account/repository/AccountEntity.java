@@ -17,6 +17,9 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class AccountEntity extends CommonEntity {
 
+    @Column(name = "ACCOUNT_NUMBER")
+    private String accountNumber;
+
     @Column(name = "BALANCE_AMOUNT")
     private BigDecimal balanceAmount;
 
