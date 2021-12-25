@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: "demo-fin-app"
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: false
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+app:
+  timezone: UTC
+
+server:
+  port: 9595
+
+liquibase:
+  change-log: classpath:/db/changelog/db.changelog-master.xml
