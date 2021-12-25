@@ -22,4 +22,4 @@ app:
   timezone: UTC
 
 server:
-  port: 9595
+  port: 8080
