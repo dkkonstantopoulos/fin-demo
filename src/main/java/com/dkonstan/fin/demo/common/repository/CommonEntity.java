@@ -6,12 +6,14 @@ import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.Objects;
 
 @MappedSuperclass
+@EntityListeners(AuditingEntityListener.class)
 public abstract class CommonEntity {
 
     @Id
@@ -28,14 +30,14 @@ public abstract class CommonEntity {
 
     @CreatedDate
     @Temporal(TemporalType.TIMESTAMP)
-    private ZonedDateTime createdDate;
+    private Date createdDate;
 
     @CreatedBy
     private String createdBy;
 
     @LastModifiedDate
     @Temporal(TemporalType.TIMESTAMP)
-    private ZonedDateTime lastUpdatedAt;
+    private Date lastUpdatedAt;
 
     @LastModifiedBy
     private String lastModifiedBy;

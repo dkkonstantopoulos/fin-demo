@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
 
-    <changeSet id="1640451615526-1" author="dkonstan">
+    <changeSet id="create-accounts" author="dkonstan">
         <createTable tableName="accounts">
             <column name="id" type="VARCHAR(64)">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="pk_accounts"/>
