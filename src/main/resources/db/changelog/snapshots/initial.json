@@ -1,0 +1,193 @@
+{
+  "snapshot": {
+    "created": "2021-12-25T18:57:26.3",
+    "database": {
+      "productVersion": "2021.3",
+      "shortName": "intellijPsiClass",
+      "majorVersion": "0",
+      "minorVersion": "0",
+      "user": "dimit",
+      "productName": "JPA Buddy Intellij",
+      "url": "jpab?generationContext=ed843d1d-513b-4590-8e9a-4cc029764060"
+    },
+    "metadata": {
+      "generationContext": {
+        "dbmsType": "mysql"
+      }
+    },
+    "objects": {
+      "liquibase.structure.core.Catalog": [
+        {
+          "catalog": {
+            "default": true,
+            "name": "JPA_BUDDY",
+            "snapshotId": "bbd2112"
+          }
+        }]
+      ,
+      "liquibase.structure.core.Column": [
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "balance_amount",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#bbd2114",
+            "snapshotId": "bbd2121",
+            "type": {
+              "typeName": "DECIMAL"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "balance_currency",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#bbd2114",
+            "snapshotId": "bbd2122",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "created_by",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#bbd2114",
+            "snapshotId": "bbd2118",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "created_date",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#bbd2114",
+            "snapshotId": "bbd2117",
+            "type": {
+              "typeName": "DATETIME"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "id",
+            "nullable": false,
+            "relation": "liquibase.structure.core.Table#bbd2114",
+            "snapshotId": "bbd2116",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "last_modified_by",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#bbd2114",
+            "snapshotId": "bbd2120",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "certainDataType": false,
+            "name": "last_updated_at",
+            "nullable": true,
+            "relation": "liquibase.structure.core.Table#bbd2114",
+            "snapshotId": "bbd2119",
+            "type": {
+              "typeName": "DATETIME"
+            }
+          }
+        }]
+      ,
+      "liquibase.structure.core.Index": [
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#bbd2116"]
+            ,
+            "name": "IX_pk_accounts",
+            "snapshotId": "bbd2115",
+            "table": "liquibase.structure.core.Table#bbd2114",
+            "unique": true
+          }
+        }]
+      ,
+      "liquibase.structure.core.PrimaryKey": [
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#bbd2115",
+            "columns": [
+              "liquibase.structure.core.Column#bbd2116"]
+            ,
+            "name": "pk_accounts",
+            "snapshotId": "bbd2123",
+            "table": "liquibase.structure.core.Table#bbd2114"
+          }
+        }]
+      ,
+      "liquibase.structure.core.Schema": [
+        {
+          "schema": {
+            "catalog": "liquibase.structure.core.Catalog#bbd2112",
+            "default": true,
+            "snapshotId": "bbd2113"
+          }
+        }]
+      ,
+      "liquibase.structure.core.Table": [
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#bbd2116",
+              "liquibase.structure.core.Column#bbd2117",
+              "liquibase.structure.core.Column#bbd2118",
+              "liquibase.structure.core.Column#bbd2119",
+              "liquibase.structure.core.Column#bbd2120",
+              "liquibase.structure.core.Column#bbd2121",
+              "liquibase.structure.core.Column#bbd2122"]
+            ,
+            "indexes": [
+              "liquibase.structure.core.Index#bbd2115"]
+            ,
+            "name": "accounts",
+            "primaryKey": "liquibase.structure.core.PrimaryKey#bbd2123",
+            "schema": "liquibase.structure.core.Schema#bbd2113",
+            "snapshotId": "bbd2114"
+          }
+        }]
+      
+    },
+    "snapshotControl": {
+      "snapshotControl": {
+        "includedType": [
+          "liquibase.structure.core.Catalog",
+          "liquibase.structure.core.Column",
+          "liquibase.structure.core.ForeignKey",
+          "liquibase.structure.core.Index",
+          "liquibase.structure.core.PrimaryKey",
+          "liquibase.structure.core.Schema",
+          "liquibase.structure.core.Sequence",
+          "liquibase.structure.core.Table",
+          "liquibase.structure.core.UniqueConstraint",
+          "liquibase.structure.core.View"]
+        
+      }
+    }
+  }
+}
